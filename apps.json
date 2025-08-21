@@ -4,7 +4,8 @@
       "title": "Sites",
       "url": "https://sites.huny.dev",
       "description": "DNS에 등록된 도메인 목록, A, CNAME, WORKER만 출력",
-      "category": "도구"
+      "category": "도구",
+      "thumbnail": "/thumbs/sites.png"
     },
     {
       "title": "Studio",
