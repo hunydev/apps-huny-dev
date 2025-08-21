@@ -1,0 +1,39 @@
+{
+  "apps": [
+    {
+      "title": "Studio",
+      "url": "https://studio.huny.dev",
+      "description": "내가 만든 웹앱들을 모아보는 스튜디오",
+      "category": "포털"
+    },
+    {
+      "title": "Sites",
+      "url": "https://sites.huny.dev",
+      "description": "도메인 링크 & 설명 집합",
+      "category": "도구"
+    },
+    {
+      "title": "TTS Lab",
+      "url": "https://tts.huny.dev",
+      "description": "텍스트-음성 합성 관련 실험실",
+      "category": "AI / 오디오"
+    },
+    {
+      "title": "VC Demo",
+      "url": "https://vc.huny.dev",
+      "description": "Voice Conversion 데모",
+      "category": "AI / 오디오"
+    },
+    {
+      "title": "Docs",
+      "url": "https://docs.huny.dev",
+      "description": "문서/메모 더미",
+      "category": "문서"
+    },
+    {
+      "title": "Playground",
+      "url": "https://lab.huny.dev",
+      "description": "각종 실험"
+    }
+  ]
+}
