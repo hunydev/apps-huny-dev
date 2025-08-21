@@ -8,6 +8,13 @@
       "thumbnail": "/thumbs/sites.png"
     },
     {
+      "title": "Prompt Keeper",
+      "url": "https://prompts.huny.dev",
+      "description": "재사용 가능한 AI 프롬프트 관리",
+      "category": "AI / 텍스트",
+      "thumbnail": "/thumbs/prompts.png"
+    },
+    {
       "title": "Studio",
       "url": "https://studio.huny.dev",
       "description": "내가 만든 웹앱들을 모아보는 스튜디오",
