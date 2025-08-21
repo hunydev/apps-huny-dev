@@ -10,11 +10,13 @@ export default defineConfig({
     react(),
     viteStaticCopy({
       targets: [
-        { src: 'apps.json', dest: '' }
+        { src: 'apps.json', dest: '' },
+        { src: 'thumbs/**/*', dest: 'thumbs' }
       ]
     })
   ],
   // Dev server: serve /apps.json from project root and disable caching
+  // Also serve /thumbs/* from project root for local development parity
   configureServer(server) {
     server.middlewares.use((req, res, next) => {
       if (req.url === '/apps.json') {
@@ -23,6 +25,16 @@ export default defineConfig({
           res.setHeader('Content-Type', 'application/json; charset=utf-8')
           res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
           return res.end(fs.readFileSync(p))
+        }
+      }
+      if (req.url && req.url.startsWith('/thumbs/')) {
+        const p2 = path.resolve(process.cwd(), req.url.slice(1))
+        if (fs.existsSync(p2)) {
+          if (p2.endsWith('.png')) {
+            res.setHeader('Content-Type', 'image/png')
+          }
+          res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
+          return res.end(fs.readFileSync(p2))
         }
       }
       next()
