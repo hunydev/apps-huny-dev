@@ -1,16 +1,16 @@
 {
   "apps": [
     {
+      "title": "Sites",
+      "url": "https://sites.huny.dev",
+      "description": "DNS에 등록된 도메인 목록, A, CNAME, WORKER만 출력",
+      "category": "도구"
+    },
+    {
       "title": "Studio",
       "url": "https://studio.huny.dev",
       "description": "내가 만든 웹앱들을 모아보는 스튜디오",
       "category": "포털"
-    },
-    {
-      "title": "Sites",
-      "url": "https://sites.huny.dev",
-      "description": "도메인 링크 & 설명 집합",
-      "category": "도구"
     },
     {
       "title": "TTS Lab",
